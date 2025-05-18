@@ -1,0 +1,84 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_Name: GameManager
+  m_Component:
+  - component: {fileID: 100001}
+  - component: {fileID: 100002}
+--- !u!4 &100001
+Transform:
+  m_GameObject: {fileID: 100000}
+--- !u!114 &100002
+MonoBehaviour:
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 00000000000000000000000000000000, type: 3}
+--- !u!1 &100010
+GameObject:
+  m_Name: Player
+  m_Component:
+  - component: {fileID: 100011}
+  - component: {fileID: 100012}
+  - component: {fileID: 100013}
+--- !u!4 &100011
+Transform:
+  m_GameObject: {fileID: 100010}
+--- !u!143 &100012
+CharacterController:
+  m_GameObject: {fileID: 100010}
+--- !u!114 &100013
+MonoBehaviour:
+  m_GameObject: {fileID: 100010}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 00000000000000000000000000000000, type: 3}
+--- !u!1 &100020
+GameObject:
+  m_Name: Enemy
+  m_Component:
+  - component: {fileID: 100021}
+  - component: {fileID: 100022}
+  - component: {fileID: 100023}
+--- !u!4 &100021
+Transform:
+  m_GameObject: {fileID: 100020}
+--- !u!195 &100022
+NavMeshAgent:
+  m_GameObject: {fileID: 100020}
+--- !u!114 &100023
+MonoBehaviour:
+  m_GameObject: {fileID: 100020}
+  m_Enabled: 1
+  m_Script: {fileID: 11500000, guid: 00000000000000000000000000000000, type: 3}
+--- !u!1 &100030
+GameObject:
+  m_Name: Main Camera
+  m_Component:
+  - component: {fileID: 100031}
+  - component: {fileID: 100032}
+  - component: {fileID: 100033}
+--- !u!4 &100031
+Transform:
+  m_GameObject: {fileID: 100030}
+  m_LocalPosition: {x: 0, y: 1, z: -10}
+--- !u!20 &100032
+Camera:
+  m_GameObject: {fileID: 100030}
+--- !u!81 &100033
+AudioListener:
+  m_GameObject: {fileID: 100030}
+--- !u!1 &100040
+GameObject:
+  m_Name: Directional Light
+  m_Component:
+  - component: {fileID: 100041}
+  - component: {fileID: 100042}
+--- !u!4 &100041
+Transform:
+  m_GameObject: {fileID: 100040}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalRotation: {x: 0.707, y: 0, z: 0, w: 0.707}
+--- !u!108 &100042
+Light:
+  m_GameObject: {fileID: 100040}
+  m_Type: 1
